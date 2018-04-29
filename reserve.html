@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hot Restaurant</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='jumbotron'>
+            <h1>Hot Restaurant</h1>
+            <hr>
+            <h2>We have tables!!</h2>
+
+            <a href='/'>
+                <button type='button' class='btn bt-lg btn-danger'>
+                    Main Menu
+                </button>
+            </a>
+
+            <a href='/api/tables'>
+                <button type='button' class='btn btn-lg btn-primary'>
+                    view tables
+                </button>
+            </a>
+        </div>
+
+        <div class='row'>
+            <div class='panel panel-default'>
+                <div class='panel-heading'> Make A reservation!!
+                </div>
+
+                <div class="panel-body">
+                    <form id='newReservation'>
+                        <div class='form-group'>
+                            <label for='name'>Name</label>
+                            <input type='text' class='form-control' id='name-submit' placeholder='guest name'>
+                        </div>
+                        <div class='form-group'>
+                            <label for='phone number'>phone number</label>
+                            <input type='text' class='form-control' id='phone-submit' placeholder='phone number'>
+                        </div>
+                        <div class='form-group'>
+                            <label for='e-mail'>e-mail address</label>
+                            <input type='email' class='form-control' id='email-submit' placeholder='email'>
+                        </div>
+                        <button type='button' class='btn btn-success' id='reserve-submit'>Reserve your table</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class='footer'>
+            <div class='container'>
+                <a href='/api/tables'>Tables</a> ||
+                <a href='/api/reserve'>Reservations</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type='text/javascript'>
+        $('#reserve-btn').on('click', function(event) {
+            event.preventDefault();
+            var guestReserved = 
+        })
+    </script>
+</body>
+
+</html>
